@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>About the Percolation Application.</h1>
+<br> 
+<img src="static/percolationImage96.png" alt="Example of a Percolation Image" style="float:right;width:400px;height:400px;">
+
+<p>This cloud web app is designed for the use of creation of <b>Percolation images</b>. Before many animals open their eyes, neurons from various parts of the visual pathway fire spontaneously; this activity has been demonstrated to be essential to the development of proper visual function. Percolation images are believed to represent this spontaneous activity. These images are widely used in research relating to the visual system as they are commonly used as training images for visual models. In the images white and black pixels are used to represent active (firing) and inactive neurons respectivley.</p>
+
+<h3> Parameters </h3>
+<p> The percolation model has 3 input parameters: <b>P</b>, the proportion of neurons which have the ability to fire; <b>R</b>, the radius in which neurons have the ability to be affected by other neurons; and <b>T</b>, the lower threshold for the number of neurons within a neurons radius that must be firing, for the neuron to begin firing itself. It is only at 'critical' values of these parameters (where the image neither 'floods' with active neurons or only contains small active clusters) that percolation images can be used to represent real visual images.
+</p>
+
+
+{% endblock %}
